@@ -1,0 +1,36 @@
+public class MultipleOperationsQueue {
+    public static void main(String[] args) {
+        int queue[] = new int[5];
+        int front = 0;
+        int rear = -1;
+
+        rear++;
+        queue[rear] = 10;
+
+        rear++;
+        queue[rear] = 20;
+
+        rear++;
+        queue[rear] = 30;
+
+        int deleted = queue[front];
+        front++;
+
+        System.out.println("Deleted Element: " + deleted);
+
+        rear++;
+        queue[rear] = 40;
+
+        rear++;
+        queue[rear] = 50;
+
+        System.out.print("Queue: ");
+        for (int i = front; i <= rear; i++) {
+            System.out.print(queue[i] + " ");
+        }
+
+        System.out.println();
+        System.out.println("Front: " + queue[front]);
+        System.out.println("Rear: " + queue[rear]);
+    }
+}
