@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class InsertInQueue {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int queue[] = new int[n];
+        int rear = -1;
+
+        for (int i = 0; i < n; i++) {
+            int element = sc.nextInt();
+            rear++;
+            queue[rear] = element;
+        }
+
+        System.out.print("Queue: ");
+        for (int i = 0; i <= rear; i++) {
+            System.out.print(queue[i] + " ");
+        }
+    }
+}
