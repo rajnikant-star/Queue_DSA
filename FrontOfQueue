@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class FrontOfQueue {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int queue[] = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            queue[i] = sc.nextInt();
+        }
+
+        int front = 0;
+
+        System.out.println("Front Element: " + queue[front]);
+    }
+}
