@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class RearOfQueue {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int queue[] = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            queue[i] = sc.nextInt();
+        }
+
+        int rear = n - 1;
+
+        System.out.println("Rear Element: " + queue[rear]);
+    }
+}
